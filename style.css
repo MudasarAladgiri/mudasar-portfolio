@@ -144,13 +144,13 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   gap: 2rem;
 }
 
-.hero-image img {
-  max-width: 480px;
+.hero-image #heroAnim {
+  max-width: 580px;
   width: 100%;
 }
 
@@ -623,7 +623,7 @@ footer {
     height: 60px;
   }
 
-  .hero-image img {
+  .hero-image #heroAnim {
     display: none;
   }
 }

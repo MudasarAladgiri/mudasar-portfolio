@@ -58,9 +58,8 @@
         <img src="images/hero2.jpg" alt="Your Profile Photo" />
       </div>
       
-      <div class="hero-image">
-        <img src="images/hero-image.png" alt="Creative Illustration" />
-      </div>
+      <div class="hero-image"><div id="heroAnim"></div></div>
+
       <div class="hero-text">
         <h1 class="typing-text">Hi, I'm <span id="typed-name" class="highlight"></span></h1>
         <p>I’m a graphic designer with a BCA from MES College, skilled in Adobe Illustrator, Photoshop, InDesign, and Figma. My background in programming supports functional, visually strong designs. 
@@ -195,6 +194,16 @@
     alert("Thank you! Your message has been sent.");
   });
 </script>
+<script>
+lottie.loadAnimation({
+  container: document.getElementById('heroAnim'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'webdesigner.json'
+});
+</script>
+
 
 
 </body>

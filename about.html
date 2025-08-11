@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mudasar Aladgiri – CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background:
+        linear-gradient(to right, rgba(223, 255, 227, 0.3), rgba(161, 233, 248, 0.5)),
+        url('images/bg-pc.svg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 1rem 2rem;
+      color: teal;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .top-bar {
+      text-align: center;
+      padding: 0.5rem 1rem;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 0;
+      color: #0a4f4f;
+    }
+
+    .profile-box {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 1rem auto;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .profile-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 128, 128, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .profile-box:hover .overlay {
+      opacity: 1;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      background: teal;
+      color: white;
+      padding: 2rem;
+    }
+
+    .sidebar h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .sidebar p, .sidebar ul {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .sidebar ul {
+      padding-left: 1rem;
+    }
+
+    .main {
+      flex: 3;
+      padding: 2rem;
+    }
+
+    .main h1 {
+      font-size: 26px;
+      color: #222;
+    }
+
+    .main h3 {
+      color: teal;
+      margin-top: 1.8rem;
+      font-size: 20px;
+    }
+
+    .main p {
+      line-height: 1.6;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .main ul {
+      margin-left: 1rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.5rem;
+      background: teal;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button a {
+      color: white;
+      text-decoration: none;
+    }
+
+    button:hover {
+      background: #007777;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        margin: 1rem;
+        border-radius: 16px;
+      }
+
+      .sidebar {
+        text-align: left;
+        padding: 2rem 1.2rem;
+      }
+
+      .main {
+        padding: 1.5rem 1.2rem;
+      }
+    }
+
+    /* Animation for smooth appearance */
+    #about {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    #about.reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+          /* Footer */
+footer {
+  background: #a8e2e2;
+}
+
+.site-footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  border-top: 1px solid #dceeea;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.footer-container p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow icons to wrap on small screens */
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  color: #333;
+  background: #ffffff;
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.social-icons a:hover {
+  background: teal;
+  color: white;
+  transform: scale(1.15);
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 1.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .social-icons {
+    gap: 0.8rem;
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a class="back-link" href="index.html"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+
+  <!-- Smooth reveal target -->
+  <div class="top-bar" id="about">
+    <div class="profile-box">
+      <img src="images/hero2.jpg" alt="My Profile">
+      <div class="overlay">2 Years<br>of Experience</div>
+    </div>
+    <h2>About Me</h2>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Mudasar Aladgiri</h2>
+      <p><strong>Graphic Designer</strong></p>
+      <hr>
+      <p><strong>Phone:</strong><br>+973 33416068</p>
+      <p><strong>Email:</strong><br>maladgiri@gmail.com</p>
+      <p><strong>Address:</strong><br>Engineering Tower, Flat 3, Road 3320, Block 0333, Mahooz, Zinj, Manama</p>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>Illustrator, Photoshop, InDesign, Figma</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>UI/UX, SEO, Excel</li>
+      </ul>
+
+      <h3>Languages</h3>
+      <ul>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Konkani</li>
+      </ul>
+
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Football, Singing, Volleyball</li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <p>I am a passionate graphic designer with a BCA degree from MES College, equipped with advanced knowledge in tools like Adobe Illustrator, Photoshop, InDesign, and Figma. I create meaningful, beautiful visuals that align with brand goals.</p>
+      <p>My background in programming and marketing enables me to merge creativity with logic, producing not only good-looking designs but effective ones too.</p>
+
+      <h3>Experience</h3>
+      <p><strong>Aeroskop – Bahrain</strong><br>Graphic Designer (Jun 2025 – Present)</p>
+      <p><strong>Travelpack – India</strong><br>Graphic & UI Designer (Nov 2023 – Apr 2025)</p>
+      <p><strong>KAMSOFT – India</strong><br>Frontend Developer (Jun 2023 – Oct 2023)</p>
+      <p><strong>Aim Dubai – UAE</strong><br>Freelance Banner Designer (Jun 2023 – Aug 2023)</p>
+
+      <h3>Education</h3>
+      <p><strong>MES Vasant Joshi College</strong> – BCA (2020–2023)</p>
+      <p><strong>St. Andrews School</strong> – HSSC (2020)</p>
+      <p><strong>Anjuman H. I. School</strong> – SSC (2018)</p>
+
+      <h3>Certifications</h3>
+      <ul>
+        <li>Ultimate Graphic Design Course</li>
+        <li>Advanced Excel</li>
+      </ul>
+
+      <h3>Projects</h3>
+      <ul>
+        <li>Brochure Designs, Logo Design</li>
+        <li>Facebook, WhatsApp Banners</li>
+        <li>Ecommerce Website UI</li>
+      </ul>
+
+      <button><a href="https://wa.me/97339530143" target="_blank" class="call-btn" title="Chat on WhatsApp">Hire Me</a></button>
+    </div>
+  </div>
+
+    <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Mudasar Aladgiri. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#" target="https://www.instagram.com/_muddu_51207_/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mudasar-aladgiri-98014a21b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdFQNbSLyQMmqnKLII8nuVQ%3D%3D" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.behance.net/gallery/220483615/Mudasar-Porfolio-work" target="_blank" title="Behance"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    // When user lands with a #about hash, scroll and animate
+    window.addEventListener("DOMContentLoaded", function () {
+      const hash = window.location.hash;
+      const target = document.querySelector("#about");
+      if (target && hash === "#about") {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth" });
+          target.classList.add("reveal");
+        }, 150);
+      } else {
+        // Show by default if no hash
+        target.classList.add("reveal");
+      }
+    });
+  </script>
+
+</body>
+</html>

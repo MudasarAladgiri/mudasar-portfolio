@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudasar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+</head>
+<body>
+<!-- Loading Screen -->
+<div id="loader">
+  <div id="lottie-avatar" style="width: 500px; height: 500px;"></div>
+</div>
+
+  <!-- Navbar -->
+  
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="logo">
+        <img src="images/mudasar-logo.png" alt="Mudasar Logo">
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#hero">HOME</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <div class="sidebar-backdrop" onclick="toggleMenu()"></div>
+
+<div class="nav-actions">
+  <a href="https://wa.me/97339530143" target="_blank"  class="call-btn" title="Chat on Whasapp">
+   <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="images/Mudasar Aladgiri-2025.pdf" download class="quote-btn">Download CV</a>
+  <a href="images/Mudasar Aladgiri-2025.pdf" download class="quote-btn2"> <i class="fas fa-download" style="margin-right: 8px;"></i></a>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+    </nav>
+  </header>
+
+  <!-- Particles Background (if used with TSParticles.js) -->
+  <div id="tsparticles"></div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-modern">
+    <div class="particles-bg">
+      <img src="images/banner-shap-2.png" alt="Decorative background" />
+    </div>
+    <div class="hero-container">
+      <div class="floating-profile">
+        <img src="images/hero2.jpg" alt="Your Profile Photo" />
+      </div>
+      
+      <div class="hero-image">
+        <img src="images/hero-image.png" alt="Creative Illustration" />
+      </div>
+      <div class="hero-text">
+        <h1 class="typing-text">Hi, I'm <span id="typed-name" class="highlight"></span></h1>
+        <p>I’m a graphic designer with a BCA from MES College, skilled in Adobe Illustrator, Photoshop, InDesign, and Figma. My background in programming supports functional, visually strong designs. 
+          With a growing interest in marketing and branding, I aim to bridge design and strategy in impactful roles.</p>
+        <a href="about.html#about" class="cta-btn">Web CV</a>
+         <a href="certifications.html" class="cta-btn secondary-btn">Certifications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" data-aos="fade-up">
+    <div class="services-wrapper">
+      <h2>Services</h2>
+      <div class="service-grid">
+        <div class="card">Flyer</div>
+         <div class="card">Banners</div>
+        <div class="card">UI/UX</div>
+        <div class="card">Brochure</div>
+        <div class="card">Video Editing</div>
+        <div class="card">Leaflets</div>
+        <div class="card">Marketing</div>
+        <div class="card">Logo Designing</div>
+        <div class="card">Branding</div>
+        <div class="card">WireFraming</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-grid">
+        <div class="project-card">
+          <a href="all-projects.html">
+            <img src="Projects/PS/FA2.jpg" alt="Project 1">
+            <div class="project-info">
+              <a href="all-projects.html">Live Life to the Fullest</a>
+              <p>Channel your inner strength and embrace every moment with courage and grace. This is more than style — it’s a way of life.</p>
+               <div class="project-controls" style="text-align: center; margin-top: 2rem;">
+  <a href="all-projects.html" class="see-more-btn">See All Projects →</a>
+  <!-- <button class="add-btn">+ Add Project</button> -->
+</div>
+            </div>
+          </a>
+        </div>
+         <div class="project-card">
+          <a href="all-projects.html">
+            <img src="Projects/AI/FA.png" alt="Project 2">
+            <div class="project-info">
+              <a href="all-projects.html">Fearless</a>
+              <p>Break boundaries. Defy expectations. Your moment is now — and so is your style.</p>
+               <div class="project-controls" style="text-align: center; margin-top: 2rem;">
+  <a href="all-projects.html" class="see-more-btn">See All Projects →</a>
+  <!-- <button class="add-btn">+ Add Project</button> -->
+</div>
+            </div>
+          </a>
+        </div>
+
+    </div>
+       
+      </div>
+ <h2 class="software-heading">Softwares</h2>
+      <div class="software-icons">
+        <img src="images/illustrator.png" alt="Illustrator">
+        <img src="images/photoshop.png" alt="Photoshop">
+        <img src="images/indesign.png" alt="Indesign">
+        <img src="images/premiere-pro.png" alt="Premiumpro">
+        <img src="images/figma.png" alt="Figma">
+        <img src="images/html-5.png" alt="HTML">
+        <img src="images/css-3.png" alt="CSS">
+        <img src="images/filmora-square.svg" alt="Filmora">
+        <!-- Add more logos as needed -->
+      </div>
+  </section>
+
+  <!-- Skills & Experience Section -->
+<section id="skills" data-aos="fade-up">
+  <h2>Skills & Experience</h2>
+
+  <div class="skills-wrapper" data-aos="fade-right">
+    <div class="skill-bar">
+      <p>Adobe XD</p>
+      <div class="progress"><div class="progress-fill" style="width: 90%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <p>Figma</p>
+      <div class="progress"><div class="progress-fill" style="width: 85%"></div></div>
+    </div>
+    <a href="experience.html" class="see-more-btn">See More →</a>
+    <!-- <button class="add-btn">+ Add Experience</button> -->
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+   
+<section id="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <form id="contact-form" action="https://formspree.io/f/xovlwynp" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Mudasar Aladgiri. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#" target="https://www.instagram.com/_muddu_51207_/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mudasar-aladgiri-98014a21b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdFQNbSLyQMmqnKLII8nuVQ%3D%3D" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.behance.net/gallery/220483615/Mudasar-Porfolio-work" target="_blank" title="Behance"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+   
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+  </script>
+  <script>
+  document.getElementById("contact-form").addEventListener("submit", function () {
+    alert("Thank you! Your message has been sent.");
+  });
+</script>
+
+
+</body>
+</html>

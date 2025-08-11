@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 1 | Mudasar</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    .tab-buttons {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .tab-buttons button {
+      padding: 0.6rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      background-color: teal;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .tab-buttons button.active {
+      background-color: #007b7b;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 2rem 0;
+    }
+
+    .tab-content.active {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .tab-content img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 1rem 2rem;
+      color: teal;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <a class="back-link" href="index.html">← Back to Portfolio</a>
+
+  <section id="project-detail" data-aos="fade-up">
+    <h2>Project 1: Creative Design Showcase</h2>
+    <div class="tab-buttons">
+      <button class="tab-link active" data-tab="photoshop">Photoshop</button>
+      <button class="tab-link" data-tab="illustrator">Illustrator</button>
+      <button class="tab-link" data-tab="indesign">InDesign</button>
+    </div>
+
+    <div id="photoshop" class="tab-content active">
+      <img src="images/portfolio/portfolio-1.jpg" alt="Photoshop Work 1">
+      <img src="images/portfolio/portfolio-2.jpg" alt="Photoshop Work 2">
+            <img src="images/portfolio/portfolio-2.jpg" alt="Photoshop Work 2">
+
+      <!-- Add more as needed -->
+    </div>
+    <div id="illustrator" class="tab-content">
+      <img src="images/portfolio/portfolio-2.jpg" alt="Illustrator Work 1">
+      <img src="images/portfolio/portfolio-2.jpg" alt="Illustrator Work 2">
+            <img src="images/portfolio/portfolio-2.jpg" alt="Photoshop Work 2">
+
+    </div>
+    <div id="indesign" class="tab-content">
+      <img src="images/portfolio/portfolio-2.jpg" alt="InDesign Work 1">
+      <img src="images/portfolio/portfolio-2.jpg" alt="InDesign Work 2">
+            <img src="images/portfolio/portfolio-2.jpg" alt="Photoshop Work 2">
+
+    </div>
+  </section>
+
+  <script>
+    const tabButtons = document.querySelectorAll('.tab-link');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

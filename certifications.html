@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certfications | Mudasar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #dfffe3 0%, #a1e9f8 100%);
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 2rem 1rem;
+      color: #222;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: teal;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #0a4f4f;
+    }
+
+    .projects-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+.tab-content {
+  background: #ffffffcc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  animation: floatCard 4s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab-content:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+    .tab-content img {
+      width: 100%;
+      display: block;
+      border-bottom: 4px solid teal;
+    }
+
+    .tab-content a {
+      display: block;
+      text-align: center;
+      padding: 0.7rem;
+      background-color: teal;
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .tab-content a:hover {
+      background-color: #006666;
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .tab-content a {
+        font-size: 0.9rem;
+      }
+    }
+
+
+          /* Footer */
+footer {
+  background: #a8e2e2;
+}
+
+.site-footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  border-top: 1px solid #dceeea;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.footer-container p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow icons to wrap on small screens */
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  color: #333;
+  background: #ffffff;
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.social-icons a:hover {
+  background: teal;
+  color: white;
+  transform: scale(1.15);
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 1.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .social-icons {
+    gap: 0.8rem;
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a class="back-link" href="index.html">← Back to Portfolio</a>
+
+  <h2>Certifications</h2>
+
+  <div class="projects-container">
+    <div class="project-grid">
+      <div class="tab-content">
+        <a href="certifications/AI2.pdf" target="_blank"><img src="certifications/AI1.jpg" alt="Illustrator Certificate"></a>
+      </div>
+      <div class="tab-content">
+        <a href="certifications/figma2.pdf" target="_blank"><img src="certifications/figma1.jpg" alt="Figma Certificate"></a>
+      </div>
+      <div class="tab-content">
+        <a href="certifications/Graphicdesign2.pdf" target="_blank"><img src="certifications/Graphicdesign2.jpg" alt="Graphic Design Certificate"></a>
+      </div>
+      <div class="tab-content">
+        <a href="certifications/Xd1.pdf" target="_blank"><img src="certifications/Xd1.jpg" alt="XD Certificate"></a>
+      </div>
+      <div class="tab-content">
+        <a href="certifications/Web.pdf" target="_blank"><img src="certifications/Web.jpeg" alt="Web Certificate"></a>
+      </div>
+    </div>
+  </div>
+    <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Mudasar Aladgiri. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#" target="https://www.instagram.com/_muddu_51207_/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mudasar-aladgiri-98014a21b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdFQNbSLyQMmqnKLII8nuVQ%3D%3D" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.behance.net/gallery/220483615/Mudasar-Porfolio-work" target="_blank" title="Behance"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
